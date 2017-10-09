@@ -2,7 +2,7 @@
 
 <ul>
   <li>该项目是在大学期间学习前端所写的一个小demo</li>
-  <li>访问地址https://WuChenDi.github.io/Mobile-huawei/</li>
+  <li>访问地址https://WuChenDi.github.io/PC-yhshg</li>
   <li>学习并使用<a href="http://www.swiper.com.cn/">Swiper</a></li>
   <li>利用原生设置初始rem值</li>
   <li>使用CSS3中的媒体查询来实现响应式布局</li>
@@ -11,7 +11,7 @@
 </ul>
 
 <ul>
-  <li><h3>项目实现功能：</h3></li>
+  <h3>项目实现功能：</h3>
   <li>1,欢迎页</li>
   <li>2,首页</li>
   <li>3,登录、注册、商家登录</li>
