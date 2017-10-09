@@ -6,8 +6,8 @@
   <li>学习并使用<a href="http://www.swiper.com.cn/">Swiper</a></li>
   <li>利用原生设置初始rem值</li>
   <li>使用CSS3中的媒体查询来实现响应式布局</li>
-  <li>使用jQuery</li>
-  <li>H5,CSS3等</li>
+  <li>使用原生jQuery</li>
+  <li>使用H5,CSS3等</li>
 </ul>
 
 <ul>
