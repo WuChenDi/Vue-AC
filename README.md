@@ -1,13 +1,13 @@
 <h2>易和生活港</h2>
 
 <ul>
-  <li>该项目是在大学期间学习前端所写的一个小demo</li>
-  <li>访问地址https://WuChenDi.github.io/PC-yhshg</li>
+  <li>该项目是在大学期间学习前端所写的一个商城网站</li>
+  <li>访问地址https://WuChenDi.github.io/PC-yhshg</li>
   <li>学习并使用<a href="http://www.swiper.com.cn/">Swiper</a></li>
   <li>利用原生设置初始rem值</li>
   <li>使用CSS3中的媒体查询来实现响应式布局</li>
-  <li>使用原生jQuery</li>
-  <li>使用H5,CSS3等</li>
+  <li>使用原生jQuery</li>
+  <li>使用H5,CSS3等</li>
 </ul>
 
 <ul>
