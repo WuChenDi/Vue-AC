@@ -1,4 +1,5 @@
 const path = require('path')
+const createVueLoaderOptions = require('./vue-loader.config')
 
 const isDev = process.env.NODE_ENV === 'development'
 
@@ -10,10 +11,10 @@ const config = {
     path: path.join(__dirname, '../dist')
   },
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.vue$/,
-        loader: 'vue-loader'
+        loader: 'vue-loader',
+        options: createVueLoaderOptions(isDev)
       },
       {
         test: /\.jsx$/,
@@ -26,15 +27,13 @@ const config = {
       },
       {
         test: /\.(gif|jpg|jpeg|png|svg)$/,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              limit: 1024,
-              name: 'resources/[path][name].[hash:8].[ext]'
-            }
+        use: [{
+          loader: 'url-loader',
+          options: {
+            limit: 1024,
+            name: 'resources/[path][name].[hash:8].[ext]'
           }
-        ]
+        }]
       }
     ]
   }
