@@ -6,7 +6,7 @@ module.exports = (isDev) => {
     extractCSS: !isDev,
     // 实现cssModules功能
     cssModules: {},
-    // 热重载功能
-    hotReload: true
+    // 热重载功能(根据环境变量生成)
+    // hotReload: true
   }
 }
