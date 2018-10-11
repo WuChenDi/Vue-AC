@@ -17,7 +17,7 @@ const defaultPluins = [
 ]
 
 const devServer = {
-  port: 8000,
+  port: 8080,
   host: '0.0.0.0',
   overlay: {
     errors: true,
@@ -55,7 +55,7 @@ if (isDev) {
 } else {
   config = merge(baseConfig, {
     entry: {
-      app: path.join(__dirname, '../src/index.js'),
+      app: path.join(__dirname, '../client/index.js'),
       vendor: ['vue']
     },
     output: {
