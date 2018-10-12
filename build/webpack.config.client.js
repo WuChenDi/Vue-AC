@@ -36,6 +36,14 @@ if (isDev) {
         use: [
           'vue-style-loader',
           'css-loader',
+          // 配置cssModules
+          // {
+          //   loader: 'css-loader',
+          //   options: {
+          //     module: true,
+          //     localIdentName: isDev ? '[path]-[name]-[hash:base64:5]' : '[hash:base64:5]',
+          //   }
+          // },
           {
             loader: 'postcss-loader',
             options: {

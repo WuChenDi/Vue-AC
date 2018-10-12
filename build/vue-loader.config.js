@@ -8,7 +8,7 @@ module.exports = (isDev) => {
     extractCSS: !isDev,
     // 实现cssModules功能
     cssModules: {
-      localIdentName: '[path]-[name]-[hash:base64:5]',
+      localIdentName: isDev ? '[path]-[name]-[hash:base64:5]' : '[hash:base64:5]',
       camelCase: true
     },
     // 热重载功能(根据环境变量生成)
