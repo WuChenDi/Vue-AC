@@ -11,7 +11,9 @@ const defaultPluins = [
       NODE_ENV: '"development"'
     }
   }),
-  new HTMLPlugin()
+  new HTMLPlugin({
+    template: path.join(__dirname, 'template.html')
+  })
 ]
 
 const devServer = {
@@ -26,7 +28,7 @@ const devServer = {
 let config
 
 config = merge(baseConfig, {
-  entry: path.join(__dirname, '../parctice/index.js'),
+  entry: path.join(__dirname, '../practice/index.js'),
   devtool: '#cheap-module-eval-source-map',
   module: {
     rules: [{
