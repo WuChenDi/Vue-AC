@@ -18,15 +18,22 @@ app.$mount('#root')
 
 // app.text = 'this is content1'
 
-let i = 0
+// let i = 0
 setInterval(() => {
-  i++
-  // app.text += 1
+  // i++
+  // 异步操作
+  app.text += 1
+  app.text += 1
+  app.text += 1
+  app.text += 1
+  app.text += 1
+  // app.$nextTick([callback])
+
   // app.$data.text += 1
   // app.$options.data.text += 1
   // app.obj.a = i
   // app.$forceUpdate()
-  app.$set(app.obj, 'a', i)
+  // app.$set(app.obj, 'a', i)
 }, 1000)
 
 console.log(app.$data)
