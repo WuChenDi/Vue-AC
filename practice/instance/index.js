@@ -5,12 +5,12 @@ const app = new Vue({
   template: '<div ref="div">{{text}}</div>',
   data: {
     text: 0
-  },
-  watch: {
-    text (newText, oldText) {
-      console.log(`${newText}:${oldText}`)
-    }
   }
+  // watch: {
+  //   text (newText, oldText) {
+  //     console.log(`${newText}:${oldText}`)
+  //   }
+  // }
 })
 
 app.$mount('#root')
@@ -40,6 +40,16 @@ console.log(app.$scopedSlots)
 console.log(app.$refs)
 console.log(app.$isServer)
 
-// app.$watch('text', (newText, oldText) => {
-//   console.log(`${newText} : ${oldText}`)
-// })
+const unWatch = app.$watch('text', (newText, oldText) => {
+  console.log(`${newText} : ${oldText}`)
+})
+
+setTimeout(() => {
+  unWatch()
+}, 2000)
+
+app.$on('text', (a, b) => {
+  console.log(`test emited ${a} ${b}`)
+})
+
+app.$emit('text', 1, 2)
