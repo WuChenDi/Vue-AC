@@ -23,6 +23,8 @@ console.log(app.$props)
 console.log(app.$el)
 console.log(app.$options)
 
-app.$options.render = (h) => {
-  return h('div', {}, 'new render function')
-}
+// app.$options.render = (h) => {
+//   return h('div', {}, 'new render function')
+// }
+
+console.log(app.$root === app)
