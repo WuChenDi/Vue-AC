@@ -24,8 +24,9 @@ setInterval(() => {
   // app.text += 1
   // app.$data.text += 1
   // app.$options.data.text += 1
-  app.obj.a = i
-  app.$forceUpdate()
+  // app.obj.a = i
+  // app.$forceUpdate()
+  app.$set(app.obj, 'a', i)
 }, 1000)
 
 console.log(app.$data)
