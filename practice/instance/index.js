@@ -2,7 +2,7 @@ import Vue from 'vue'
 
 const app = new Vue({
   // el: '#root',
-  template: '<div>{{text}}</div>',
+  template: '<div ref="div">{{text}}</div>',
   data: {
     text: 0
   }
@@ -28,3 +28,9 @@ console.log(app.$options)
 // }
 
 console.log(app.$root === app)
+// <item><div></div></item>
+console.log(app.$children)
+console.log(app.$slots)
+console.log(app.$scopedSlots)
+console.log(app.$refs)
+console.log(app.$isServer)
