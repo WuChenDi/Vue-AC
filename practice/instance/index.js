@@ -48,8 +48,16 @@ setTimeout(() => {
   unWatch()
 }, 2000)
 
-app.$on('text', (a, b) => {
+// app.$on('text', (a, b) => {
+//   console.log(`test emited ${a} ${b}`)
+// })
+
+app.$once('text', (a, b) => {
   console.log(`test emited ${a} ${b}`)
 })
 
-app.$emit('text', 1, 2)
+setInterval(() => {
+  app.$emit('text', 1, 2)
+}, 1000)
+
+// app.$emit('text', 1, 2)
