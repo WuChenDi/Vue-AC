@@ -22,14 +22,21 @@ new Vue({
   // template: `<div :class="[isActive ? 'active' : '']">
   //   <p v-html="html"></p>
   // </div>`,
-  template: `<div :class="[{active: isActive}]">
+  template: `<div :class="[{active: isActive}]" :style="[styles, styles2]">
     <p>{{getJoinedArr(arr)}}</p>
   </div>`,
   data: {
     isActive: false,
     arr: [1, 2, 3],
     html: '<span>123</span>',
-    aaa: 'main'
+    aaa: 'main',
+    styles: {
+      color: 'red',
+      appearance: 'none'
+    },
+    styles2: {
+      color: 'black'
+    }
   },
   methods: {
     handleClick () {
