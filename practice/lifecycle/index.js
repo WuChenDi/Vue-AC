@@ -24,10 +24,10 @@ const app = new Vue({
   updated () {
     console.log(this, 'updated')
   },
-  activated () {
+  activated () { // 在组件章节讲解
     console.log(this, 'activated')
   },
-  deactivated () {
+  deactivated () { // 在组件章节讲解
     console.log(this, 'deactivated')
   },
   beforeDestroy () {
