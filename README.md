@@ -15,7 +15,7 @@ Di-got -- Vue+VueRouter+Vuex+SSR
 ## 项目运行
 ***
 通过npm安装本地服务第三方依赖模块(需要已安装[Node.js](https://nodejs.org/ "nodejs"))
-#### 注意：由于涉及大量的 ES6/7 等新属性，node 需要 6.0 以上版本 
+#### 注意：由于涉及大量的 ES6/7 等新属性，node 需要 6.0 以上版本
 ```
 cd Vue-AC
 
@@ -35,13 +35,3 @@ npm run dev
 - 使用Ajax请求后端数据
 - 组件的设计与交互
 - 路由和子路由(嵌套路由通信)
-
-
-#### 码云特技
-
-1. 使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2. 码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3. 你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4. [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5. 码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6. 码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
