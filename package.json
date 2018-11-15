@@ -23,6 +23,7 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.18.0",
+    "ejs": "^2.6.1",
     "koa": "^2.6.2",
     "koa-router": "^7.4.0",
     "vue": "2.5.13",
