@@ -4,7 +4,6 @@ const webpack = require('webpack')
 const merge = require('webpack-merge')
 const baseConfig = require('./webpack.config.base')
 
-
 const defaultPluins = [
   new webpack.DefinePlugin({
     'process.env': {
@@ -20,7 +19,7 @@ const devServer = {
   port: 8080,
   host: '0.0.0.0',
   overlay: {
-    errors: true,
+    errors: true
   },
   hot: true
 }
@@ -31,20 +30,22 @@ config = merge(baseConfig, {
   entry: path.join(__dirname, '../practice/index.js'),
   devtool: '#cheap-module-eval-source-map',
   module: {
-    rules: [{
-      test: /\.styl/,
-      use: [
-        'vue-style-loader',
-        'css-loader',
-        {
-          loader: 'postcss-loader',
-          options: {
-            sourceMap: true,
-          }
-        },
-        'stylus-loader'
-      ]
-    }]
+    rules: [
+      {
+        test: /\.styl/,
+        use: [
+          'vue-style-loader',
+          'css-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              sourceMap: true
+            }
+          },
+          'stylus-loader'
+        ]
+      }
+    ]
   },
   devServer,
   // import Vue from 'vue'
