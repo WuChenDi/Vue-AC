@@ -1,15 +1,37 @@
-# Vue-AC
-
-#### 项目介绍
-Di-got -- Vue+VueRouter+Vuex+SSR
+# Vue+Vue-Router+Vuex+SSR
 
 #### 软件架构
 ***
-- 页面结构(H5,CSS3,原生JS)
-- 框架(基于Vue脚手架:vue-cli)进行搭建
-- 数据请求处理框架(vue-resource或者Axios)
-- Vue-Router进行路由处理
-- 使用json-server模拟REST API(目前项目使用express)
+ * Vue核心
+    1. Vue实例和各种API
+    2. Vue组件开发高级内容
+    3. .vue文件开发模式原理解析
+    4. render function作用以及原理
+
+* Vuex
+  1. Vuex的基本使用和原理
+  2. Vuex分模块使用的方法
+  3. Vuex插件开发方式
+  4. Vuex在服务端渲染过程中扮演的重要角色
+
+* Vue-router
+  1. Vue-router的基本使用和原理
+  2. $router和$route实例的区别和用处
+  3. 各种导航守卫的执行时间和用处
+  4. 在服务端渲染时如何使用
+
+* 服务端渲染
+  1. 配合webpack-dev-server获取client bundle
+  2. 适用vue-meta管理title meta等头信息
+  3. renderer和bundleRenderer的区别和优势
+  4. 同步服务端渲染和客户端渲染的数据
+
+* Webpack
+  1. 基础Webpack配置和使用
+  2. 服务端渲染和客户端渲染的不同配置方式
+  3. 横跨Webpack3和Webpack4的升级
+  4. 生产环境的打包优化
+  5. 在Nodejs中将Webpack作为模块使用
 
 
 ## 项目运行
@@ -17,21 +39,18 @@ Di-got -- Vue+VueRouter+Vuex+SSR
 通过npm安装本地服务第三方依赖模块(需要已安装[Node.js](https://nodejs.org/ "nodejs"))
 #### 注意：由于涉及大量的 ES6/7 等新属性，node 需要 6.0 以上版本
 ```
+git clone https://github.com/WuChenDi/Vue-AC.git
+
 cd Vue-AC
 
-npm install 或 cnpm install(个人比较喜欢使用后者，下载依赖模块速度较快)
+npm install  或 yarn(推荐)
 
 npm run dev
-
 ```
 
 ## 总结
 ***
-- 了解vue - 数据渲染、前端模块化、路由
-- 熟悉VueJs的接口功能 - 指令的用法、选项的用法
-- 了解vue组件 - 组件的交互
-- 了解vue工程化方案 - 单文件组件Webpack测试数据
-- vue项目的搭建流程
-- 使用Ajax请求后端数据
-- 组件的设计与交互
-- 路由和子路由(嵌套路由通信)
+- Vue应用开发
+- Vue+Webpack工作流搭建
+- Vue+Vue-Router+Vuex项目架构
+- Vue服务端渲染深度集成
